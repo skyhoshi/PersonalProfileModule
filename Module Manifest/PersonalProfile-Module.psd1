@@ -15,7 +15,7 @@
     ModuleVersion          = '0.0.0.1'
 
     # Supported PSEditions
-    CompatiblePSEditions   = @("6", "7")
+    CompatiblePSEditions   = @("Desktop", "Core")
 
     # ID used to uniquely identify this module
     GUID                   = '072a795d-3f71-46de-af56-4b1bf5b0639f'
@@ -45,7 +45,7 @@
     DotNetFrameworkVersion = '4.8'
 
     # Minimum version of the common language runtime (CLR) required by this module. This prerequisite is valid for the PowerShell Desktop edition only.
-    # CLRVersion = ''
+    CLRVersion = ''
 
     # Processor architecture (None, X86, Amd64) required by this module
     ProcessorArchitecture  = 'None'

@@ -13,7 +13,7 @@ function Redo-PersonalProfile {
         }
     }
     Reset-ProfileScripts
-<#
+    <#
 .SYNOPSIS
 
 Reloads all Powershell Profile files
@@ -49,25 +49,9 @@ function Reset-PersonalProfileScripts {
     . "$env:OneDriveConsumer\Scripts\Powershell\Profiles\Scripts\SystemProfiles\SymbolicLinks\SetupProfileSymbolicLinks.ps1"
     . "$env:OneDriveConsumer\Scripts\Powershell\Profiles\Scripts\Open-SSH\RobotSSH.ps1"
 }
-function New-PersonalProfile {
-    <#
-    [CmdletBinding()]
-    param (
-        [Parameter()]
-        [string]
-        $profileName
-    )
-    if (!(Test-Path -Path $profileName)) {
-        New-Item -ItemType File -Path $profileName -Force
-    }
-#>
-}
 
-function Register-PersonalProfileManager{
+
+function Register-PersonalProfileManager {
     
 
-}
-
-function Register-LocalPersonalProfileManager{
-    Register-PSRepository -Name SorafamilyNuGetRepo -SourceLocation http://nuget.sorafamily.com/nuget/ -ScriptSourceLocation http://nuget.sorafamily.com/nuget -InstallationPolicy Trusted
 }
