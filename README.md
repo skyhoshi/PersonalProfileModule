@@ -11,11 +11,15 @@ If you setup OneDrive AFTER First Use, you will need to manually edit configurat
 ## Configuration
 
 ### ~/.config/powershell.settings/powershell.profile.settings.json
-| Setting | Required | Description |
-|:---|--|--:|
+| Setting | Nested : Class | Required | Description |
+|:---|---|---|---:|
 
 (will fill in as Used)
 ## Usage
 
 ### Command List
 
+#### Settings
+```powershell
+# PersonalProfileGenerateSettings has all the settings predefined in Powershell OBJ's and will be generated if a settings file doesn't exist.
+```

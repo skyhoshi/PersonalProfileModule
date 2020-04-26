@@ -1,4 +1,4 @@
-
+. "C:\Users\marcus\OneDrive\Scripts\Powershell\Modules\PersonalProfileModule\PersonalProfile.Settings.ps1"
 $ProfileInfoStorage = "$env:OneDriveConsumer\Scripts\Powershell\Profiles\XML-JSON Storage\Profile-Info\$env:COMPUTERNAME\"
 function Redo-PersonalProfile {
     @(
@@ -13,7 +13,7 @@ function Redo-PersonalProfile {
         }
     }
     Reset-ProfileScripts
-    <#
+<#
 .SYNOPSIS
 
 Reloads all Powershell Profile files

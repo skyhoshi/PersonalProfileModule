@@ -37,6 +37,66 @@ function Connect-PersonalProfileJson {
     }
 }
 
-function Initialize-PersonalProfileJson{
+function Initialize-PersonalProfileJson {
 
+}
+
+$AppsToPorts = @{
+    Factorio  = @(
+        {
+            localIp=10.1.11.92
+            port=34197
+        }
+    )
+    Minecraft = @(
+        {
+            localIp=10.1.11.104
+            port=25565
+        },
+        {
+            localIp=10.1.11.104
+            port=25566
+        },
+        {
+            localIp=10.1.11.104
+            port=25567
+        },
+        {
+            localIp=10.1.11.104
+            port=25568
+        }, {
+            localIp=10.1.11.104
+            port=25569
+        },
+        {
+            localIp=10.1.11.104
+            port=25570
+        }        
+    )
+    WebSites  = @{
+        WorkTestSites = @{
+            1      = 80
+            2      = 443
+            3      = 1260
+            4      = 1261
+            Ranges = @(
+                @{
+                    Start = 442
+                    End   = 445
+                },
+                @{
+                    Start = 1200
+                    End   = 1240
+                },
+                @{
+                    Start = 1280
+                    End   = 1365
+                },
+                @{
+                    Start = 21475
+                    End   = 21575
+                }
+            )
+        }
+    }
 }
