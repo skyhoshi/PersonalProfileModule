@@ -1,5 +1,6 @@
-. "C:\Users\marcus\OneDrive\Scripts\Powershell\Modules\PersonalProfileModule\PersonalProfile.Settings.ps1"
-$ProfileInfoStorage = "$env:OneDriveConsumer\Scripts\Powershell\Profiles\XML-JSON Storage\Profile-Info\$env:COMPUTERNAME\"
+. "$env:OneDriveConsumer\Scripts\Powershell\Modules\PersonalProfileModule\settings\PersonalProfile.Settings.ps1"
+. "$env:OneDriveConsumer\Scripts\Powershell\Modules\SystemProfileManagementModule\SymbolicLinks\SetupProfileSymbolicLinks.ps1"
+
 function Redo-PersonalProfile {
     @(
         $Profile.AllUsersAllHosts,
@@ -13,7 +14,7 @@ function Redo-PersonalProfile {
         }
     }
     Reset-ProfileScripts
-<#
+    <#
 .SYNOPSIS
 
 Reloads all Powershell Profile files
@@ -46,8 +47,10 @@ Set-Item
 }
 
 function Reset-PersonalProfileScripts {
-    . "$env:OneDriveConsumer\Scripts\Powershell\Profiles\Scripts\SystemProfiles\SymbolicLinks\SetupProfileSymbolicLinks.ps1"
-    . "$env:OneDriveConsumer\Scripts\Powershell\Profiles\Scripts\Open-SSH\RobotSSH.ps1"
+    . "$env:OneDriveConsumer\Scripts\Powershell\Modules\PersonalProfileModule\PersonalProfile.Settings.ps1"
+    . "$env:OneDriveConsumer\Scripts\Powershell\Modules\SystemProfileManagementModule\SymbolicLinks\SetupProfileSymbolicLinks.ps1"
+    #
+    . "$env:OneDriveConsumer\Scripts\Powershell\Scripts\Open-SSH\RobotSSh.ps1"
 }
 
 
