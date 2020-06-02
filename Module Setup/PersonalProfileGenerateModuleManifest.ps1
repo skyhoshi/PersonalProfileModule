@@ -10,7 +10,7 @@ $PersonalProfileManifestDefinition =
     ModuleVersion          = '0.0.0.1'
 
     # Supported PSEditions
-    CompatiblePSEditions   = @(""6", "7"")
+    CompatiblePSEditions   = @(6, 7)
 
     # ID used to uniquely identify this module
     GUID                   = '072a795d-3f71-46de-af56-4b1bf5b0639f'
