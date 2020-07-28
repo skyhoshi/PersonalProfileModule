@@ -1,3 +1,73 @@
 {
-    
-}
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "type": "object",
+    "properties": {
+      "DefaultFolders": {
+        "type": "object",
+        "properties": {
+          "": {
+            "type": "string"
+          }
+        },
+        "additionalProperties": true,
+        "required": [
+          ""
+        ]
+      },
+      "LoadAtHostStart": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "Description": {
+              "type": "string"
+            },
+            "File": {
+              "type": "string",
+              "enum": [
+                ""
+              ]
+            },
+            "variables": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "replacementValue": {
+                    "type": "string",
+                    "enum": [
+                      ""
+                    ]
+                  },
+                  "template": {
+                    "type": "string",
+                    "enum": [
+                      ""
+                    ]
+                  }
+                },
+                "additionalProperties": true,
+                "required": [
+                  "replacementValue",
+                  "template"
+                ]
+              },
+              "additionalItems": true
+            }
+          },
+          "additionalProperties": true,
+          "required": [
+            "Description",
+            "File",
+            "variables"
+          ]
+        },
+        "additionalItems": true
+      }
+    },
+    "additionalProperties": true,
+    "required": [
+      "DefaultFolders",
+      "LoadAtHostStart"
+    ]
+  }
