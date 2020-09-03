@@ -27,7 +27,7 @@
     CompanyName            = 'Skyhoshi Games'
 
     # Copyright statement for this module
-    Copyright              = '(c) Marcus Kern. All rights reserved.'
+    Copyright              = '(c)2020 Marcus Kern. All rights reserved.'
 
     # Description of the functionality provided by this module
     Description            = 'Powershell Module to manage Profile scripts. Load, Reload, and Expand Scripts within your script folder'
