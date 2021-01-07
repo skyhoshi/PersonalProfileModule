@@ -1,5 +1,5 @@
-. "$env:OneDriveConsumer\Scripts\Powershell\Modules\PersonalProfileModule\settings\PersonalProfile.Settings.ps1"
-. "$env:OneDriveConsumer\Scripts\Powershell\Modules\SystemProfileManagementModule\SymbolicLinks\SetupProfileSymbolicLinks.ps1"
+. "$env:POWERSHELLSCRIPTSTORE\Scripts\Powershell\Modules\PersonalProfileModule\settings\PersonalProfile.Settings.ps1"
+. "$env:POWERSHELLSCRIPTSTORE\Scripts\Powershell\Modules\SystemProfileManagementModule\SymbolicLinks\SetupProfileSymbolicLinks.ps1"
 
 function Redo-PersonalProfile {
     @(
@@ -47,10 +47,10 @@ Set-Item
 }
 
 function Reset-PersonalProfileScripts {
-    . "$env:OneDriveConsumer\Scripts\Powershell\Modules\PersonalProfileModule\PersonalProfile.Settings.ps1"
-    . "$env:OneDriveConsumer\Scripts\Powershell\Modules\SystemProfileManagementModule\SymbolicLinks\SetupProfileSymbolicLinks.ps1"
+    . "$env:POWERSHELLSCRIPTSTORE\Scripts\Powershell\Modules\PersonalProfileModule\PersonalProfile.Settings.ps1"
+    . "$env:POWERSHELLSCRIPTSTORE\Scripts\Powershell\Modules\SystemProfileManagementModule\SymbolicLinks\SetupProfileSymbolicLinks.ps1"
     #
-    . "$env:OneDriveConsumer\Scripts\Powershell\Scripts\Open-SSH\RobotSSh.ps1"
+    . "$env:POWERSHELLSCRIPTSTORE\Scripts\Powershell\Scripts\Open-SSH\RobotSSh.ps1"
 }
 
 
